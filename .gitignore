@@ -1,0 +1,84 @@
+
+# ==========================================
+# Dependencias Node.js
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==========================================
+# Variaveis de ambiente e segredos
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# Chaves e certificados privados
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cert
+
+# ==========================================
+# Logs e arquivos temporarios
+# ==========================================
+logs/
+*.log
+tmp/
+temp/
+.tmp/
+.cache/
+
+# ==========================================
+# Banco de dados e backups locais
+# ==========================================
+*.sql.gz
+*.dump
+*.backup
+*.sqlite
+*.sqlite3
+*.db
+
+# Dumps e backups do PostgreSQL
+backup/
+backups/
+dump/
+
+# ==========================================
+# Docker e volumes locais
+# ==========================================
+docker-data/
+postgres-data/
+pgdata/
+
+# ==========================================
+# Sistema operacional
+# ==========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# Editores e IDEs
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Cobertura de testes
+# ==========================================
+coverage/
+.nyc_output/
+
+# ==========================================
+# Arquivos de build
+# ==========================================
+dist/
+build/
