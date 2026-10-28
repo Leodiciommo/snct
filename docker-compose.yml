@@ -1,0 +1,15 @@
+# Opcional: sobe o portal e o PostgreSQL. Preencha .env (copie de .env.example) antes.
+services:
+  db:
+    image: postgres:16
+    environment: { POSTGRES_USER: snct, POSTGRES_PASSWORD: ${DB_PASSWORD}, POSTGRES_DB: snct }
+    volumes: [dados:/var/lib/postgresql/data]
+    restart: unless-stopped
+  app:
+    build: .
+    env_file: .env
+    environment: { DATABASE_URL: "postgres://snct:${DB_PASSWORD}@db:5432/snct" }
+    depends_on: [db]
+    ports: ["127.0.0.1:3000:3000"]
+    restart: unless-stopped
+volumes: { dados: {} }
