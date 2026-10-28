@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portal SNCT IFSP Caraguatatuba (Node.js + PostgreSQL)
 
 Portal por edição (`/snct/2026`, `/snct/2027`...). `/snct` e as edições antigas continuam no site institucional (Joomla).
@@ -59,3 +60,6 @@ Autenticação: mesmo mecanismo dos demais sistemas da CTI, aplicado em `src/aut
 ## Pendências conhecidas
 - **Ligar a interface à API** (principal): `public/index.html` guarda os dados no navegador; `docs/campos-formulario.md` traz o mapeamento campo a campo para a ligação. Não foi feita porque não havia PostgreSQL disponível para testar o servidor de ponta a ponta.
 - Testes de integração (API + banco); aviso por e-mail; upload de logotipos/banner (hoje caminho/URL); extrair o JavaScript da página para retirar `unsafe-inline` da política de segurança; Excel/PDF nativos (hoje CSV e impressão); revisão completa de acessibilidade e carga.
+=======
+# snct
+>>>>>>> 5d64732ee3e35d2e51fd6344f203aa685afc40e0
